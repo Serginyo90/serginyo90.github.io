@@ -441,6 +441,11 @@
     color: var(--muted);
   }
 
+  .section,
+  main {
+    scroll-margin-top: 1.5rem;
+  }
+
   /* ---------- load sequence ---------- */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
@@ -498,7 +503,7 @@
 
     .hero { padding-top: 4.5rem; }
 
-    footer { margin-left: calc(var(--rail-w) + 3.5rem + 1.5rem); }
+    footer { grid-column: 2; margin: 0 3rem 0 0; }
   }
 
   @media (max-width: 700px) {
@@ -674,10 +679,10 @@
       </div>
     </section>
   </main>
-</div>
 
-<footer>
-  <p>© 2026 Sergii Cherbadzhy · Built as a single static page, no framework.</p>
-</footer>
+  <footer>
+    <p>© 2026 Sergii Cherbadzhy · Built as a single static page, no framework.</p>
+  </footer>
+</div>
 </body>
 </html>
